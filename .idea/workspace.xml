@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="I have remove the main class MCAS.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/gtihub/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/gtihub/MCAS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +62,7 @@
   "keyToString": {
     "Gradle.MCAS-System-Unofficial [:fr.sandro642.gtihub.MCAS.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -72,6 +71,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Shadow/Documents/Github/MCAS-System-Unofficial/src/main/java/fr/sandro642/gtihub/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -114,11 +116,33 @@
       <updated>1734995931500</updated>
       <workItem from="1734995932682" duration="467000" />
       <workItem from="1734996615416" duration="43000" />
-      <workItem from="1734996671241" duration="510000" />
+      <workItem from="1734996671241" duration="1098000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1734997279344</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734997279344</updated>
+    </task>
+    <task id="LOCAL-00002" summary="I have remove the main class MCAS.java">
+      <option name="closed" value="true" />
+      <created>1734997656119</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734997656119</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <MESSAGE value="I have remove the main class MCAS.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have remove the main class MCAS.java" />
   </component>
 </project>
