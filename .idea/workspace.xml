@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="Change workspace.xml">
+    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="New code new environment| No Brain, No Fear">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx-swt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx.base.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx.controls.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx.fxml.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx.graphics.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx.media.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx.swing.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx.web.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/ui/AirplaneModelPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/ui/AirplaneModelPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/ui/MainFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +78,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.MCAS-System-Unofficial [:fr.sandro642.github.mcas_system_unoficial.MCASApp.main()].executor": "Run",
+    "Gradle.MCAS-System-Unofficial [:fr.sandro642.github.mcas_system_unoficial.MCASMain.main()].executor": "Run",
     "Gradle.MCAS-System-Unofficial [:fr.sandro642.gtihub.MCAS.main()].executor": "Run",
     "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender may affect IDE",
     "Notification.DoNotAsk-WindowsDefender": "true",
@@ -75,26 +88,46 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Shadow/Documents/Github/MCAS-System-Unofficial/src/main/java/fr/sandro642/github/mcas_system_unoficial/lib/javafx.web.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Shadow/Documents/Github/MCAS-System-Unofficial/src/main/java/fr/sandro642/gtihub/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "discord-application",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="MCAS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.sandro642.gtihub.MCAS" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Shadow\Documents\Github\MCAS-System-Unofficial\src\main\java\fr\sandro642\github\mcas_system_unoficial\lib" />
+      <recent name="C:\Users\Shadow\Documents\Github\MCAS-System-Unofficial\src\main\java\fr\sandro642\github\mcas_system_unoficial\assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MCASApp">
+    <configuration name="MCASApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.sandro642.github.mcas_system_unoficial.MCASApp" />
       <module name="MCAS-System-Unofficial.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fr.sandro642.gtihub.*" />
+          <option name="PATTERN" value="fr.sandro642.github.mcas_system_unoficial.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MCASMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.sandro642.github.mcas_system_unoficial.MCASMain" />
+      <module name="MCAS-System-Unofficial.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.sandro642.github.mcas_system_unoficial.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MCAS" />
+        <item itemvalue="Application.MCASApp" />
+        <item itemvalue="Application.MCASMain" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +164,8 @@
       <workItem from="1734997794002" duration="341000" />
       <workItem from="1734998295300" duration="200000" />
       <workItem from="1735040604320" duration="198000" />
+      <workItem from="1735040840500" duration="5739000" />
+      <workItem from="1735054013249" duration="704000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -163,7 +199,31 @@
       <option name="project" value="LOCAL" />
       <updated>1734998473519</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New code and second commit">
+      <option name="closed" value="true" />
+      <created>1735043277287</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735043277287</updated>
+    </task>
+    <task id="LOCAL-00006" summary="New code new environment| No Brain, No Fear">
+      <option name="closed" value="true" />
+      <created>1735047469746</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735047469746</updated>
+    </task>
+    <task id="LOCAL-00007" summary="New code new environment| No Brain, No Fear">
+      <option name="closed" value="true" />
+      <created>1735047531404</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735047531404</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +234,8 @@
     <MESSAGE value="I have remove the main class MCAS.java" />
     <MESSAGE value="Crafting the directory structure and the essential classes" />
     <MESSAGE value="Change workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change workspace.xml" />
+    <MESSAGE value="New code and second commit" />
+    <MESSAGE value="New code new environment| No Brain, No Fear" />
+    <option name="LAST_COMMIT_MESSAGE" value="New code new environment| No Brain, No Fear" />
   </component>
 </project>
