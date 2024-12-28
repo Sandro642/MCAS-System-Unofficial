@@ -27,3 +27,20 @@ Bien que le MCAS soit conçu pour améliorer la sécurité, plusieurs facteurs d
 ## Conclusion
 
 Le MCAS est un système automatisé conçu pour améliorer la sécurité et les caractéristiques de vol d'un avion, en particulier dans des situations de vol à faible vitesse ou à angles d'attaque élevés. Bien qu'il offre des avantages en termes de sécurité, sa mise en œuvre nécessite une attention particulière à la précision des capteurs et à la formation des pilotes pour garantir une intervention appropriée en cas de besoin.
+
+
+Crédit du code source : [MCAS - Maneuvering Characteristics Augmentation System](https://www.boldmethod.com/learn-to-fly/systems/mcas-boeing-737-max/)
+
+```
+/**
+ * @author Sandro642
+ * @version 1.0
+ * @project MCAS System
+ * @since 2024
+ * @description The Maneuvering Characteristics Augmentation System (MCAS) is an automated system designed to enhance the flight characteristics of an aircraft, particularly regarding its behavior at high angles of attack. This system plays a crucial role in the stability of the aircraft during certain maneuvers, especially when an aircraft is at low speed or climbing, and helps to prevent a stall.
+ *
+ * @see <a href="https://fr.wikipedia.org/wiki/Maneuvering_Characteristics_Augmentation_System">Maneuvering Characteristics Augmentation System</a>
+ *
+ * @license <a href="https://opensource.org/licenses/MIT">MIT License</a>
+ */
+```
