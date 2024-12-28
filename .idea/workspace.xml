@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="Refactor changes" />
+    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="Le code est tombé en rad">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unoficial/MCASMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +156,8 @@
       <workItem from="1735040604320" duration="198000" />
       <workItem from="1735040840500" duration="5739000" />
       <workItem from="1735054013249" duration="704000" />
-      <workItem from="1735121206658" duration="113000" />
+      <workItem from="1735121206658" duration="346000" />
+      <workItem from="1735424298752" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -219,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735121308997</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Le code est tombé en rad">
+      <option name="closed" value="true" />
+      <created>1735121512325</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735121512325</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +245,7 @@
     <MESSAGE value="New code and second commit" />
     <MESSAGE value="New code new environment| No Brain, No Fear" />
     <MESSAGE value="Refactor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor changes" />
+    <MESSAGE value="Le code est tombé en rad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Le code est tombé en rad" />
   </component>
 </project>
