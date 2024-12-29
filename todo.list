@@ -1,0 +1,12 @@
+Folder UI :
+	app :
+		MainFrame.java extends JFrame
+		StatusPanel.java extende JPanel
+		LogPanel.java extends JPanel
+		TerminalPanel.java extends JPanel
+		ViewAircraftPanel.java extends JPanel
+		
+	updater :
+		MainFrame.java extense JFrame
+
+credit.java 
