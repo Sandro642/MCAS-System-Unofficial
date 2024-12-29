@@ -63,35 +63,82 @@ public class Logger {
         }
     }
 
-
+    /**
+     * @method info
+     * @description Log an info message
+     *
+     * @param message
+     */
     public void info(String message) {
         log(LogLevel.INFO, message);
     }
 
+    /**
+     * @method warning
+     * @description Log a warning message
+     *
+     * @param message
+     */
     public void warning(String message) {
         log(LogLevel.WARNING, message);
     }
 
+    /**
+     * @method error
+     * @description Log an error message
+     *
+     * @param message
+     */
     public void error(String message) {
         log(LogLevel.ERROR, message);
     }
 
+    /**
+     * @method debug
+     * @description Log a debug message
+     *
+     * @param message
+     */
     public void debug(String message) {
         log(LogLevel.DEBUG, message);
     }
 
+    /**
+     * @method critical
+     * @description Log a critical message
+     *
+     * @param message
+     */
     public void critical(String message) {
         log(LogLevel.CRITICAL, message);
     }
 
+    /**
+     * @method fatal
+     * @description Log a fatal message
+     *
+     * @param message
+     */
     public void fatal(String message) {
         log(LogLevel.FATAL, message);
     }
 
+    /**
+     * @method trace
+     * @description Log a trace message
+     *
+     * @param message
+     */
     public void trace(String message) {
         log(LogLevel.TRACE, message);
     }
 
+    /**
+     * @method success
+     * @description Log a success message
+     *
+     * @param message
+     */
     public void success(String message) {
         log(LogLevel.SUCCESS, message);
     }
