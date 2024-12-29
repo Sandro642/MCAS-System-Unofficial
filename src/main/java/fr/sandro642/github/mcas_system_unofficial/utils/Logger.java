@@ -89,6 +89,10 @@ public class Logger {
         log(LogLevel.FATAL, message);
     }
 
+    public void trace(String message) {
+        log(LogLevel.TRACE, message);
+    }
+
     public void success(String message) {
         log(LogLevel.SUCCESS, message);
     }
