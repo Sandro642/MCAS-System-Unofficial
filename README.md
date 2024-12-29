@@ -1,5 +1,7 @@
 # MCAS - Maneuvering Characteristics Augmentation System
 
+## Un "objectif" de révolutionner le monde
+
 Le **Maneuvering Characteristics Augmentation System** (MCAS) est un système automatisé conçu pour améliorer les caractéristiques de vol d'un avion, en particulier en ce qui concerne son comportement à des angles d'attaque élevés. Ce système joue un rôle crucial dans la stabilité de l'avion lors de certaines manœuvres, notamment lorsqu'un avion est à faible vitesse ou en montée, et aide à éviter un décrochage.
 
 ## Objectif du système
