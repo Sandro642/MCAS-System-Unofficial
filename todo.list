@@ -9,8 +9,8 @@ Folder UI :
 	updater :
 		MainFrame.java extense JFrame
 
-credit.java extends JPane
+credit.java extends JPanel
 
 
 Folder CORE :
-	create Soon As Possible
+	create asap
