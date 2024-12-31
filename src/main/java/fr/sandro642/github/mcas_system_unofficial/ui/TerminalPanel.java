@@ -1,7 +1,6 @@
-package fr.sandro642.github.mcas_system_unofficial;
+package fr.sandro642.github.mcas_system_unofficial.ui;
 
-import fr.sandro642.github.mcas_system_unofficial.ui.MainFrame;
-import fr.sandro642.github.mcas_system_unofficial.utils.Logger;
+import javax.swing.*;
 
 /**
  * @author Sandro642
@@ -15,23 +14,5 @@ import fr.sandro642.github.mcas_system_unofficial.utils.Logger;
  * @license <a href="https://opensource.org/licenses/MIT">MIT License</a>
  */
 
-public class MCASMain {
-
-    /**
-     * @method main
-     * @description Start the MCAS system
-     *
-     * @return void
-     */
-    public static void main(String args[]) {
-        Logger logger = new Logger(Logger.LogLevel.INFO);
-
-        logger.info("MCAS System is starting...");
-        // Code pour démarrer le système MCAS
-
-        MainFrame mainFrame = new MainFrame();
-        mainFrame.initFrame();
-
-        logger.info("MCAS System started successfully");
-    }
+public class TerminalPanel extends JPanel {
 }

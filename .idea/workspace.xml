@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="Modification du README.md">
+    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="Ajout de commentaire dans le Logger.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/CreditPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/MCASMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/MCASMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/app/LogPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/LogPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/app/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/app/StatusPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/StatusPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/app/TerminalPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/TerminalPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/app/ViewAircraftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/ViewAircraftPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/credit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/updater/MainFrame.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +31,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MCAS-System-Unofficial" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -85,6 +99,9 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
 }</component>
   <component name="RecentsManager">
@@ -143,6 +160,9 @@
       <workItem from="1735121206658" duration="346000" />
       <workItem from="1735424298752" duration="4335000" />
       <workItem from="1735499493045" duration="56000" />
+      <workItem from="1735499561204" duration="269000" />
+      <workItem from="1735515234775" duration="189000" />
+      <workItem from="1735643743371" duration="1306000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -256,7 +276,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735428600116</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ajout des fichiers de la todo.list">
+      <option name="closed" value="true" />
+      <created>1735499821142</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735499821142</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Ajout de commentaire dans le Logger.java">
+      <option name="closed" value="true" />
+      <created>1735515400162</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735515400162</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +315,9 @@
     <MESSAGE value="Refresh code" />
     <MESSAGE value="De nouvelles bases" />
     <MESSAGE value="Modification du README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification du README.md" />
+    <MESSAGE value="Ajout des fichiers de la todo.list" />
+    <MESSAGE value="Ajout de commentaire dans le Logger.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de commentaire dans le Logger.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

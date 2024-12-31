@@ -1,7 +1,7 @@
-package fr.sandro642.github.mcas_system_unofficial;
+package fr.sandro642.github.mcas_system_unofficial.ui;
 
-import fr.sandro642.github.mcas_system_unofficial.ui.MainFrame;
-import fr.sandro642.github.mcas_system_unofficial.utils.Logger;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * @author Sandro642
@@ -15,23 +15,23 @@ import fr.sandro642.github.mcas_system_unofficial.utils.Logger;
  * @license <a href="https://opensource.org/licenses/MIT">MIT License</a>
  */
 
-public class MCASMain {
+public class CreditPanel extends JPanel {
 
     /**
-     * @method main
-     * @description Start the MCAS system
+     * @method CreditPanel
+     * @description Initialize the credit panel
      *
      * @return void
      */
-    public static void main(String args[]) {
-        Logger logger = new Logger(Logger.LogLevel.INFO);
+    public CreditPanel() {
+        setLayout(new FlowLayout(FlowLayout.RIGHT));
+        setBackground(Color.LIGHT_GRAY);
 
-        logger.info("MCAS System is starting...");
-        // Code pour démarrer le système MCAS
 
-        MainFrame mainFrame = new MainFrame();
-        mainFrame.initFrame();
+        JLabel creditLabel = new JLabel("MCAS System Unofficial // Sandro642 // MIT License 2024");
+        creditLabel.setForeground(Color.BLACK);
 
-        logger.info("MCAS System started successfully");
+
+        add(creditLabel);
     }
 }

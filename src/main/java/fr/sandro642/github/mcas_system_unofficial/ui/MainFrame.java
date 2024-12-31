@@ -1,7 +1,7 @@
-package fr.sandro642.github.mcas_system_unofficial;
+package fr.sandro642.github.mcas_system_unofficial.ui;
 
-import fr.sandro642.github.mcas_system_unofficial.ui.MainFrame;
-import fr.sandro642.github.mcas_system_unofficial.utils.Logger;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * @author Sandro642
@@ -15,23 +15,30 @@ import fr.sandro642.github.mcas_system_unofficial.utils.Logger;
  * @license <a href="https://opensource.org/licenses/MIT">MIT License</a>
  */
 
-public class MCASMain {
+public class MainFrame extends JFrame {
 
     /**
-     * @method main
-     * @description Start the MCAS system
+     * @method initFrame
+     * @description Initialize the frame
      *
      * @return void
      */
-    public static void main(String args[]) {
-        Logger logger = new Logger(Logger.LogLevel.INFO);
+    public void initFrame() {
+        // Configure the current JFrame (this)
+        setTitle("MCAS App System Unofficial");
+        setSize(1280, 720);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
+        setBackground(new Color(255, 255, 255));
 
-        logger.info("MCAS System is starting...");
-        // Code pour démarrer le système MCAS
 
-        MainFrame mainFrame = new MainFrame();
-        mainFrame.initFrame();
 
-        logger.info("MCAS System started successfully");
+
+        /////////////// Credit Panel ///////////////
+        CreditPanel creditPanel = new CreditPanel();
+        add(creditPanel, BorderLayout.SOUTH);
+
+        // Make the frame visible
+        setVisible(true);
     }
 }
