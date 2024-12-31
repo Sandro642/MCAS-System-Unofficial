@@ -1,6 +1,7 @@
 package fr.sandro642.github.mcas_system_unofficial.ui;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * @author Sandro642
@@ -15,4 +16,38 @@ import javax.swing.*;
  */
 
 public class TerminalPanel extends JPanel {
+
+    /**
+     * @property terminalField
+     * @description Terminal field
+     *
+     * Terminal field (modifiable as needed)
+     */
+    private final JTextField terminalField;
+
+    /**
+     * @method TerminalPanel
+     * @description Initialize the terminal panel
+     *
+     * @return void
+     */
+    public TerminalPanel() {
+        setLayout(new FlowLayout(FlowLayout.LEFT));
+        setBackground(Color.LIGHT_GRAY);
+
+        terminalField = new JTextField("Entrer une commande ici", 20);
+        terminalField.setForeground(Color.BLACK);
+        terminalField.setBackground(Color.GRAY);
+        add(terminalField);
+    }
+
+    /**
+     * @method getCommand
+     * @description Get the command
+     *
+     * @return String
+     */
+    public String getCommand() {
+        return terminalField.getText();
+    }
 }

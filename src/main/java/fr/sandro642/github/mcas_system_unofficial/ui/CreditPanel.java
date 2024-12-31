@@ -24,14 +24,15 @@ public class CreditPanel extends JPanel {
      * @return void
      */
     public CreditPanel() {
-        setLayout(new FlowLayout(FlowLayout.RIGHT));
+        // Utilise un BorderLayout pour occuper toute la largeur
+        setLayout(new BorderLayout());
         setBackground(Color.LIGHT_GRAY);
 
-
-        JLabel creditLabel = new JLabel("MCAS System Unofficial // Sandro642 // MIT License 2024");
+        // Créer le texte de crédit
+        JLabel creditLabel = new JLabel("MCAS System Unofficial // Sandro642 // MIT License 2024", JLabel.CENTER);
         creditLabel.setForeground(Color.BLACK);
 
-
-        add(creditLabel);
+        // Ajoute le label au panneau
+        add(creditLabel, BorderLayout.CENTER);
     }
 }
