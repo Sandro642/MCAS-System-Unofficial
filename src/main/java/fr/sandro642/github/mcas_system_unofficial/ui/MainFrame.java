@@ -62,13 +62,6 @@ public class MainFrame extends JFrame {
         centerPanel.add(modelPanel);
         centerPanel.add(logPanel);
 
-        // Ajouter le terminal dans l'espace vide
-        TerminalPanel terminalPanel = new TerminalPanel();
-        JPanel terminalWrapper = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        terminalWrapper.setBackground(Color.GRAY); // Fond pour le terminal
-        terminalWrapper.add(terminalPanel); // Ajouter le terminal
-        centerPanel.add(terminalWrapper); // Terminal ajouté dans l'espace vide
-
         mainPanel.add(centerPanel, BorderLayout.CENTER);
 
         // Ajouter le panneau de crédit distinct

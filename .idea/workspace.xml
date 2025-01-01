@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="Correction, création de MainFrame, CreditPanel ainsi que la création de TerminalPanel">
+    <list default="true" id="12d6665a-a2a1-4bca-9f24-6c66fd34cd59" name="Changes" comment="En cours de développement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/CreditPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/CreditPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/TerminalPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sandro642/github/mcas_system_unofficial/ui/TerminalPanel.java" afterDir="false" />
     </list>
@@ -157,7 +156,9 @@
       <workItem from="1735499561204" duration="269000" />
       <workItem from="1735515234775" duration="189000" />
       <workItem from="1735643743371" duration="1683000" />
-      <workItem from="1735661157944" duration="2458000" />
+      <workItem from="1735661157944" duration="2726000" />
+      <workItem from="1735692014453" duration="764000" />
+      <workItem from="1735692852629" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -295,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735645423310</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="En cours de développement">
+      <option name="closed" value="true" />
+      <created>1735663795653</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735663795653</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +330,8 @@
     <MESSAGE value="Ajout des fichiers de la todo.list" />
     <MESSAGE value="Ajout de commentaire dans le Logger.java" />
     <MESSAGE value="Correction, création de MainFrame, CreditPanel ainsi que la création de TerminalPanel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction, création de MainFrame, CreditPanel ainsi que la création de TerminalPanel" />
+    <MESSAGE value="En cours de développement" />
+    <option name="LAST_COMMIT_MESSAGE" value="En cours de développement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

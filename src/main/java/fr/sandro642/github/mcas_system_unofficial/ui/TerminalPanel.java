@@ -32,7 +32,6 @@ public class TerminalPanel extends JPanel {
      * @return void
      */
     public TerminalPanel() {
-        setLayout(new FlowLayout(FlowLayout.LEFT));
         setBackground(Color.LIGHT_GRAY);
 
         terminalField = new JTextField("Entrer une commande ici", 20);
