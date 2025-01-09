@@ -1,6 +1,7 @@
 import 'colors';
 import * as readline from 'readline';
 import Logger from '../utils/Logger';
+import { checkForUpdates, applyUpdate, rejectUpdate, startUpdater, stopUpdater, getUpdaterStatus } from '../updater/logicUpdater';
 
 const logger = new Logger();
 
@@ -42,19 +43,25 @@ function initCLI() {
 function handleUpdaterCommand(subCommand: string) {
     switch (subCommand) {
         case 'start':
-            logger.info('Updater démarré.');
+            startUpdater();
             break;
         case 'stop':
-            logger.info('Updater arrêté.');
+            stopUpdater();
             break;
         case 'status':
-            logger.info('Statut de l\'updater : en cours.');
+            logger.info('Statut de l\'updater : ' + (getUpdaterStatus() ? 'démarré' : 'arrêté') + '.');
             break;
-        case 'run':
-            logger.info('Updater en cours d\'exécution.');
+        case 'check':
+            checkForUpdates();
+            break;
+        case 'apply':
+            applyUpdate();
+            break;
+        case 'reject':
+            rejectUpdate();
             break;
         default:
-            logger.info('Sous-commande inconnue pour "updater". Utilisez "start", "stop", "status" ou "run".');
+            logger.info('Sous-commande inconnue pour "updater". Utilisez "start", "stop", "status", "check", "apply" ou "reject".');
             break;
     }
 }
