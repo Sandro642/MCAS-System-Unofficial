@@ -28,9 +28,6 @@ function initCLI() {
             case 'updater':
                 handleUpdaterCommand(subCommand);
                 break;
-            default:
-                logger.info('Commande inconnue. Tapez "-help" pour obtenir de l\'aide.\n');
-                break;
         }
         rl.prompt();
     }).on('close', () => {
