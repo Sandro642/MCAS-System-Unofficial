@@ -2,7 +2,7 @@
   "name": "mcas-system-unofficial",
   "version": "1.0.0",
   "description": "MCAS-System-Unofficial",
-  "main": "src/MCASMain.ts",
+  "main": "src/ui/MainPage.js",
   "scripts": {
     "build": "tsc",
     "start": "ts-node src/MCASMain.ts"
@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.10.3",
-    "electron": "^33.2.1",
+    "electron": "^33.3.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },
