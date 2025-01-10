@@ -16,14 +16,14 @@ function initCLI() {
     rl.prompt();
 
     rl.on('line', (line) => {
-        const [command, subCommand] = line.trim().split(' ');
+        const [command, subCommand, thirdSubCommand] = line.trim().split(' ');
 
         switch (command) {
             case 'help':
-                logger.info('Liste des commandes disponibles : help, exit, clear, updater');
+                logger.info('Liste des commandes disponibles : help, services, clear, exit.');
                 break;
-            case 'updater':
-                handleUpdaterCommand(subCommand);
+            case 'services':
+                handleServiceCommand(subCommand, thirdSubCommand);
                 break;
             case 'clear': 
                 console.clear();
@@ -40,8 +40,22 @@ function initCLI() {
     });
 }
 
-function handleUpdaterCommand(subCommand: string) {
+function handleServiceCommand(subCommand: string, thirdSubCommand: string) {
     switch (subCommand) {
+        case 'updater':
+            handleUpdaterCommand(thirdSubCommand)
+            break;
+        case 'mcas':
+            // A renseigner
+            break;
+        default:
+            logger.info('Sous-commande inconnue pour "services". Utilisez "updater".');
+            break;
+    }
+}
+
+function handleUpdaterCommand(thirdSubCommand: string) {
+    switch (thirdSubCommand) {
         case 'start':
             startUpdater();
             break;
