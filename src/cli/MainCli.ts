@@ -1,7 +1,8 @@
 import 'colors';
 import * as readline from 'readline';
 import Logger from '../utils/Logger';
-import { checkForUpdates, applyUpdate, rejectUpdate, startUpdater, stopUpdater, getUpdaterStatus } from '../updater/logicUpdater';
+
+import { handleServicesCommand } from './commands/parent/HandlerServicesCommand';
 
 const logger = new Logger();
 
@@ -23,7 +24,7 @@ function initCLI() {
                 logger.info('Liste des commandes disponibles : help, services, clear, exit.');
                 break;
             case 'services':
-                handleServiceCommand(subCommand, thirdSubCommand);
+                handleServicesCommand(subCommand, thirdSubCommand);
                 break;
             case 'clear': 
                 console.clear();
@@ -40,51 +41,10 @@ function initCLI() {
     });
 }
 
-function handleServiceCommand(subCommand: string, thirdSubCommand: string) {
-    switch (subCommand) {
-        case 'updater':
-            handleUpdaterCommand(thirdSubCommand);
-            break;
-        case 'mcas':
-            handleMCASCommand(thirdSubCommand);
-            break;
-        default:
-            logger.info('Sous-commande inconnue pour "services". Utilisez "updater".');
-            break;
-    }
-}
 
-function handleUpdaterCommand(thirdSubCommand: string) {
-    switch (thirdSubCommand) {
-        case 'start':
-            startUpdater();
-            break;
-        case 'stop':
-            stopUpdater();
-            break;
-        case 'status':
-            logger.info('Statut de l\'updater : ' + (getUpdaterStatus() ? 'démarré' : 'arrêté') + '.');
-            break;
-        case 'check':
-            checkForUpdates();
-            break;
-        case 'apply':
-            applyUpdate();
-            break;
-        case 'reject':
-            rejectUpdate();
-            break;
-        default:
-            logger.info('Sous-commande inconnue pour "updater". Utilisez "start", "stop", "status", "check", "apply" ou "reject".');
-            break;
-    }
-}
 
-function handleMCASCommand(thirdSubCommand: string) {
-    switch (thirdSubCommand) {
-        default:
-            logger.info('Sous-commande incoonu pour "MCAS"')
-    }
-}
+
+
+
 
 export default initCLI;
