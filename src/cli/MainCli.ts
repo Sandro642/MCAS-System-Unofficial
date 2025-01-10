@@ -19,15 +19,18 @@ function initCLI() {
         const [command, subCommand] = line.trim().split(' ');
 
         switch (command) {
-            case '-help':
-                logger.info('Liste des commandes disponibles : help, exit, updater');
-                break;
-            case 'exit':
-                rl.close();
+            case 'help':
+                logger.info('Liste des commandes disponibles : help, exit, clear, updater');
                 break;
             case 'updater':
                 handleUpdaterCommand(subCommand);
                 break;
+            case 'clear': 
+                console.clear();
+                break;
+            case 'exit':
+                rl.close();
+                 break;
         }
         rl.prompt();
     }).on('close', () => {
