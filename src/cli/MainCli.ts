@@ -43,10 +43,10 @@ function initCLI() {
 function handleServiceCommand(subCommand: string, thirdSubCommand: string) {
     switch (subCommand) {
         case 'updater':
-            handleUpdaterCommand(thirdSubCommand)
+            handleUpdaterCommand(thirdSubCommand);
             break;
         case 'mcas':
-            // A renseigner
+            handleMCASCommand(thirdSubCommand);
             break;
         default:
             logger.info('Sous-commande inconnue pour "services". Utilisez "updater".');
@@ -77,6 +77,13 @@ function handleUpdaterCommand(thirdSubCommand: string) {
         default:
             logger.info('Sous-commande inconnue pour "updater". Utilisez "start", "stop", "status", "check", "apply" ou "reject".');
             break;
+    }
+}
+
+function handleMCASCommand(thirdSubCommand: string) {
+    switch (thirdSubCommand) {
+        default:
+            logger.info('Sous-commande incoonu pour "MCAS"')
     }
 }
 
