@@ -7,7 +7,7 @@ let updaterStatus = true;
 
 export function checkForUpdates() {
     if (!updaterStatus) {
-        logger.info('Updater est arrêté. Veuillez démarrer l\'updater avant de vérifier les mises à jour.');
+        logger.warn('Updater est arrêté. Veuillez démarrer l\'updater avant de vérifier les mises à jour.');
         return;
     }
     try {
@@ -26,7 +26,7 @@ export function checkForUpdates() {
 
 export function applyUpdate() {
     if (!updaterStatus) {
-        logger.info('Updater est arrêté. Veuillez démarrer l\'updater avant d\'appliquer les mises à jour.');
+        logger.warn('Updater est arrêté. Veuillez démarrer l\'updater avant d\'appliquer les mises à jour.');
         return;
     }
     if (updateQueue.length > 0) {
@@ -43,11 +43,11 @@ export function applyUpdate() {
 
 export function rejectUpdate() {
     if (!updaterStatus) {
-        logger.info('Updater est arrêté. Veuillez démarrer l\'updater avant de rejeter les mises à jour.');
+        logger.warn('Updater est arrêté. Veuillez démarrer l\'updater avant de rejeter les mises à jour.');
         return;
     }
     updateQueue = [];
-    logger.info('Mises à jour rejetées.');
+    logger.warn('Mises à jour rejetées.');
 }
 
 export function startUpdater() {

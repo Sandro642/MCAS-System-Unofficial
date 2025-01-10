@@ -11,28 +11,34 @@ function initCLI() {
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout,
-        prompt: 'console'.blue + '@'.white + 'MCAS-System-$'.green + ' '
+        prompt: '\nconsole'.blue + '@'.white + 'MCAS-System-$'.green + ' '
     });
+
+    rl.prompt();
+
+    const commandHandlers: Record<string, (subCommand?: string, thirdSubCommand?: string) => void> = {
+        help: () => {
+            const availableCommands = Object.keys(commandHandlers).join(', ');
+            logger.info(`Liste des commandes disponibles : ${availableCommands}`);
+        },
+        services: (subCommand, thirdSubCommand) => handleServicesCommand(subCommand || '', thirdSubCommand || ''),
+        clear: () => console.clear(),
+        exit: () => {
+            rl.close();
+        },
+    };
 
     rl.prompt();
 
     rl.on('line', (line) => {
         const [command, subCommand, thirdSubCommand] = line.trim().split(' ');
 
-        switch (command) {
-            case 'help':
-                logger.info('Liste des commandes disponibles : ' + Object.values(command));
-                break;
-            case 'services':
-                handleServicesCommand(subCommand, thirdSubCommand);
-                break;
-            case 'clear': 
-                console.clear();
-                break;
-            case 'exit':
-                rl.close();
-                 break;
+        if (commandHandlers[command]) {
+            commandHandlers[command](subCommand, thirdSubCommand);
+        } else {
+            logger.info(`Commande inconnue : "${command}". Tapez "help" pour la liste des commandes disponibles.`);
         }
+
         rl.prompt();
     }).on('close', () => {
         console.clear();
