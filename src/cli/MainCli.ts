@@ -21,7 +21,7 @@ function initCLI() {
 
         switch (command) {
             case 'help':
-                logger.info('Liste des commandes disponibles : help, services, clear, exit.');
+                logger.info('Liste des commandes disponibles : ' + Object.values(command));
                 break;
             case 'services':
                 handleServicesCommand(subCommand, thirdSubCommand);
