@@ -1,5 +1,6 @@
 import { execSync } from 'child_process';
 import Logger from '../utils/Logger';
+import initCLI from '../cli/MainCli';
 
 const logger = new Logger();
 let updateQueue: string[] = [];
@@ -62,4 +63,29 @@ export function stopUpdater() {
 
 export function getUpdaterStatus() {
     return updaterStatus;
+}
+
+export function checkAndUpdate() {
+    try {
+        // Check if the git repository exists
+        execSync('git status');
+        logger.info('Git repository found.');
+    } catch (error) {
+        // Initialize the git repository if not found
+        logger.warn('Git repository not found. Initializing...');
+        try {
+            execSync('git init');
+            logger.info('Git repository initialized.');
+        } catch (initError) {
+            logger.error('Failed to initialize git repository.');
+            process.exit(1);
+        }
+    }
+
+    checkForUpdates();
+    if (updateQueue.length > 0) {
+        logger.info('Mises à jour disponibles. Veuillez les appliquer.');
+    } else {
+        initCLI();
+    }
 }
