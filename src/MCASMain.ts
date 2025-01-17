@@ -25,7 +25,7 @@ async function initMCASMain() {
 
     if (!isConnected) {
         console.clear();
-        logger.error('Non connecté à internet. Fermeture du CLI.');
+        logger.error("Non connecté à internet. temps d'attente dépassé...");
         process.exit(0);
     } else {
         logger.info('Vous êtes connecté à internet.');
