@@ -69,15 +69,14 @@ export function checkAndUpdate() {
     try {
         // Check if the git repository exists
         execSync('git status');
-        logger.info('Git repository found.');
     } catch (error) {
         // Initialize the git repository if not found
-        logger.warn('Git repository not found. Initializing...');
+        logger.warn('Référentiel git non trouvé. Initialisation...');
         try {
             execSync('git init');
-            logger.info('Git repository initialized.');
+            logger.info('Référentiel git initialisé.');
         } catch (initError) {
-            logger.error('Failed to initialize git repository.');
+            logger.error('Erreur lors de l\'initialisation du référentiel git.');
             process.exit(1);
         }
     }

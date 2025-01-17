@@ -47,10 +47,4 @@ function initCLI() {
     });
 }
 
-
-
-
-
-
-
 export default initCLI;
