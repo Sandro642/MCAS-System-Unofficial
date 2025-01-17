@@ -24,7 +24,9 @@ async function initMCASMain() {
     const isConnected = await checkInternetConnection();
 
     if (!isConnected) {
-        logger.error('Non connecté à internet. Mise à jour bloquée.');
+        console.clear();
+        logger.error('Non connecté à internet. Fermeture du CLI.');
+        process.exit(0);
     } else {
         logger.info('Vous êtes connecté à internet.');
         checkAndUpdate();
