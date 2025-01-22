@@ -84,6 +84,7 @@ export function checkAndUpdate() {
     checkForUpdates();
     if (updateQueue.length > 0) {
         logger.info('Mises à jour disponibles. Veuillez les appliquer.');
+        initCLI();
     } else {
         initCLI();
     }
