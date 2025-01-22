@@ -31,3 +31,5 @@ Bien que le MCAS soit conçu pour améliorer la sécurité, plusieurs facteurs d
 Le MCAS est un système automatisé conçu pour améliorer la sécurité et les caractéristiques de vol d'un avion, en particulier dans des situations de vol à faible vitesse ou à angles d'attaque élevés. Bien qu'il offre des avantages en termes de sécurité, sa mise en œuvre nécessite une attention particulière à la précision des capteurs et à la formation des pilotes pour garantir une intervention appropriée en cas de besoin.
 
 Suppression du à l'inutilisation de JAVA.
+
+L'Updater fonctionne parfaitement...
