@@ -18,7 +18,7 @@ export function checkForUpdates() {
             updateQueue = updates.split('\n');
             logger.info('Mises à jour trouvées et ajoutées à la queue.');
         } else {
-            logger.info('Aucune mise à jour trouvée.');
+            logger.info('Aucune mise à jour trouvée. Vous êtes à jour !');
         }
     } catch (error) {
         logger.error('Erreur lors de la vérification des mises à jour.');
