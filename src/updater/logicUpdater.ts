@@ -33,7 +33,7 @@ export function applyUpdate() {
     if (updateQueue.length > 0) {
         try {
             execSync('git pull', { stdio: 'inherit' });
-            logger.info('Mises à jour appliquées.');
+            logger.info('Mises à jour appliquées. Voulez-vous redémarrer maintenant ? (y/n):');
             promptRestart();
         } catch (error) {
             logger.error('Erreur lors de l\'application des mises à jour.');
