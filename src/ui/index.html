@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCAS System Unofficial // GUI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCAS System Unofficial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr 1fr;
+      height: 100vh;
+    }
+    #status { grid-column: 1 / 2; padding: 10px; }
+    #responses { grid-column: 1 / 2; grid-row: 2; padding: 10px; border-top: 1px solid #ddd; }
+    #simulation { grid-column: 2 / 3; grid-row: 1 / 3; display: flex; justify-content: center; align-items: center; background: #f0f0f0; }
+  </style>
 </head>
 <body>
-<h1>Bienvenue dans votre fenêtre Electron !</h1>
+  <div id="status">MCAS Status: <span id="status-text">Unknown</span></div>
+  <div id="status">MCAS Load Status: <span id="status-text">Unknown</span></div>
+  <div id="status">MCAS Emergency Status: <span id="status-text">Not Engaged</span></div>
+  <div id="responses">
+    <h3>MCAS Logs</h3>
+    <div id="response-list"></div>
+  </div>
+  <div id="simulation">
+    <canvas id="simulation-canvas" width="400" height="400"></canvas>
+  </div>
+  <script src="MainPage.js"></script>
 </body>
 </html>
