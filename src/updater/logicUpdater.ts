@@ -32,8 +32,9 @@ export function applyUpdate() {
     }
     if (updateQueue.length > 0) {
         try {
-            execSync('git pull');
+            execSync('git pull', { stdio: 'inherit' });
             logger.info('Mises à jour appliquées.');
+            promptRestart();
         } catch (error) {
             logger.error('Erreur lors de l\'application des mises à jour.');
         }
@@ -88,4 +89,21 @@ export function checkAndUpdate() {
     } else {
         initCLI();
     }
+}
+
+function promptRestart() {
+    const rl = require('readline').createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+
+    rl.question('Mises à jour appliquées. Voulez-vous redémarrer maintenant ? (y/n): ', (answer: string) => {
+        if (answer.toLowerCase() === 'y') {
+            logger.info('Redémarrage en cours...');
+            process.exit(0);
+        } else {
+            logger.info('Redémarrage annulé. Vous pouvez redémarrer plus tard.');
+        }
+        rl.close();
+    });
 }
